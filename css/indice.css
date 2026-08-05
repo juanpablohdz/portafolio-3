@@ -1,0 +1,115 @@
+html {
+  scroll-behavior: smooth;
+}
+
+/* TABLA */
+.tabla-indice{
+  width:100%;
+  max-width:700px;
+  border-collapse:collapse;
+}
+
+/* FILAS */
+.tabla-indice tr{
+  transition:background-color .25s ease;
+}
+
+/* CELDAS */
+.tabla-indice td{
+  padding:6px 8px;
+  line-height:1.25;
+}
+
+/* NUMERACIÓN */
+.tabla-indice .num{
+  width:40px;
+  text-align:right;
+  padding-right:10px;
+  font-weight:700;
+  color:#6b7280;
+}
+
+/* LINKS */
+.tabla-indice a{
+  text-decoration:none;
+  color:#1a56db;
+  position:relative;
+  transition:color .25s ease, padding-left .25s ease;
+}
+
+/* SUBRAYADO */
+.tabla-indice a::after{
+  content:"";
+  position:absolute;
+  left:0;
+  bottom:-2px;
+  width:0;
+  height:2px;
+  background:#1a56db;
+  transition:width .3s ease;
+}
+
+/* HOVER */
+.tabla-indice tr:hover{
+  background:#f4f7ff;
+}
+
+.tabla-indice tr:hover a{
+  padding-left:6px;
+}
+
+.tabla-indice tr:hover a::after{
+  width:100%;
+}
+
+/* ===== NIVELES ===== */
+
+/* TITULO PRINCIPAL */
+.tabla-indice td a{
+  font-size:1.05rem;
+  font-weight:700;
+  color:#111827;
+}
+
+/* SUBINDICE */
+.tabla-indice .sub a{
+  font-size:.95rem;
+  font-weight:500;
+  color:#374151;
+}
+
+/* SUB-SUBINDICE */
+.tabla-indice .sub-sub a{
+  font-size:.88rem;
+  font-weight:400;
+  color:#6b7280;
+}
+
+/* SANGRIA */
+.tabla-indice .sub{
+  padding-left:20px;
+}
+
+.tabla-indice .sub-sub{
+  padding-left:40px;
+}
+
+/* TITULO */
+.article-title{
+  margin-bottom:8px;
+  position:relative;
+}
+
+.article-title::after{
+  content:"";
+  display:block;
+  width:400px;
+  height:3px;
+  background:linear-gradient(90deg,#1a56db,transparent);
+  margin-top:6px;
+}
+
+/* SCROLL */
+h2{
+  scroll-margin-top:100px;
+}
