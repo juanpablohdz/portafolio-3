@@ -1,0 +1,9 @@
+/* ===== Efecto al hacer scroll (todo el sitio) ===== */
+html.sfx-activo .sfx{opacity:0;transform:translateY(30px);transition:opacity .8s ease,transform .8s cubic-bezier(.2,.7,.2,1);transition-delay:var(--d,0s);will-change:opacity,transform}
+html.sfx-activo .sfx.sfx-l{transform:translateX(-40px)}
+html.sfx-activo .sfx.sfx-r{transform:translateX(40px)}
+html.sfx-activo .sfx.sfx-z{transform:scale(.94)}
+html.sfx-activo .sfx.on{opacity:1;transform:none}
+.sfx-barra{position:fixed;left:0;top:0;height:3px;width:100%;z-index:2000;transform-origin:0 50%;transform:scaleX(0);
+  background:linear-gradient(90deg,#00C2FF 0%,#C13CFF 38%,#19E36B 72%,#F2E814 100%);pointer-events:none}
+@media (prefers-reduced-motion:reduce){html.sfx-activo .sfx{opacity:1;transform:none;transition:none}}

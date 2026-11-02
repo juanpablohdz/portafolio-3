@@ -1,0 +1,160 @@
+/* ===== Mejoras del portafolio (sobre la plantilla DevFolio) ===== */
+:root {
+  --azul: #0078ff;
+  --tinta: #1e1e1e;
+  --tenue: #6b7280;
+  --hero-1: #0b1230;
+  --hero-2: #05070f;
+}
+
+/* ---------- Portada ---------- */
+.hero-datos {
+  background: radial-gradient(ellipse at 25% 20%, #1b2f6b 0%, transparent 55%),
+              radial-gradient(ellipse at 80% 85%, #0f4d4a 0%, transparent 50%),
+              linear-gradient(160deg, var(--hero-1), var(--hero-2));
+  position: relative;
+}
+.hero-datos::before {
+  content: "";
+  position: absolute; inset: 0;
+  background-image: radial-gradient(rgba(255,255,255,.09) 1.4px, transparent 1.4px);
+  background-size: 34px 34px;
+  -webkit-mask-image: radial-gradient(ellipse 70% 60% at 50% 50%, #000 30%, transparent 100%);
+          mask-image: radial-gradient(ellipse 70% 60% at 50% 50%, #000 30%, transparent 100%);
+}
+.hero-datos .overlay-itro { background: transparent; }
+.hero-datos .intro-content { position: relative; z-index: 2; }
+.hero-kicker {
+  color: #8fb8ff; letter-spacing: .35em; font-size: .85rem; font-weight: 600; margin-bottom: .75rem;
+}
+.hero-lead { color: #d6dcef; font-size: 1.25rem; max-width: 640px; margin: 0 auto 1.25rem; }
+.hero-datos .intro-subtitle { color: #fff; }
+.hero-ctas { display: flex; gap: 12px; justify-content: center; flex-wrap: wrap; margin-top: 2rem; }
+.btn-hero {
+  display: inline-block; padding: 12px 26px; border-radius: 999px; font-weight: 600;
+  color: #fff !important; border: 1.5px solid rgba(255,255,255,.55); text-decoration: none !important;
+  transition: background .2s, border-color .2s, transform .2s;
+}
+.btn-hero:hover { background: rgba(255,255,255,.12); transform: translateY(-1px); }
+.btn-hero-primario { background: var(--azul); border-color: var(--azul); }
+.btn-hero-primario:hover { background: #1a88ff; }
+
+/* ---------- Habilidades agrupadas ---------- */
+.skills-titulo { text-align: center; font-size: 1.6rem; margin: 2.5rem 0 1.5rem; }
+.skills-grid { display: grid; grid-template-columns: repeat(2, minmax(0, 1fr)); gap: 18px; }
+.skill-grupo { background: #f7f8fb; border-radius: 10px; padding: 16px 18px; }
+.skill-grupo h4 {
+  font-size: .8rem; letter-spacing: .12em; text-transform: uppercase; color: var(--tenue);
+  margin-bottom: 10px; font-weight: 600;
+}
+.skill-grupo .badge {
+  display: inline-block; margin: 0 6px 8px 0; padding: 6px 12px; border-radius: 999px;
+  background: #fff; color: var(--tinta); border: 1px solid #dfe3ec; font-size: .82rem; font-weight: 500;
+}
+@media (max-width: 767px) { .skills-grid { grid-template-columns: 1fr; } }
+
+/* ---------- Proyectos ---------- */
+.nota-privacidad { color: var(--tenue); font-size: .9rem; }
+
+.card-blog .card-img img { width: 100%; height: 220px; object-fit: cover; object-position: center; background: #fff; }
+
+/* ---------- Experiencia (línea de tiempo) ---------- */
+.experiencia { padding: 5rem 0 3rem; background: #fff; }
+.timeline { position: relative; max-width: 860px; margin: 0 auto; padding-left: 36px; }
+.timeline::before {
+  content: ""; position: absolute; left: 35px; top: 8px; bottom: 8px; width: 2px; background: #dbe4f3;
+}
+.tl-item { position: relative; display: flex; gap: 22px; margin-bottom: 34px; }
+.tl-logo {
+  flex: 0 0 72px; height: 72px; border-radius: 50%; background: #fff; overflow: hidden;
+  box-shadow: 0 2px 10px rgba(0,0,0,.12); margin-left: -36px; z-index: 1;
+  display: flex; align-items: center; justify-content: center;
+}
+.tl-logo img { width: 100%; height: 100%; object-fit: cover; }
+.tl-body {
+  background: #f7f8fb; border-radius: 12px; padding: 18px 22px; flex: 1;
+  border-left: 3px solid var(--azul);
+}
+.tl-formacion .tl-body { border-left-color: #9aa3b5; }
+.tl-body h4 { font-size: 1.15rem; margin-bottom: 2px; }
+.tl-org { color: var(--azul); font-weight: 600; font-size: .92rem; margin-bottom: 10px; }
+.tl-body ul { margin: 0; padding-left: 18px; color: #3f4552; }
+.tl-body li { margin-bottom: 4px; }
+@media (max-width: 575px) {
+  .timeline { padding-left: 0; }
+  .timeline::before { display: none; }
+  .tl-item { flex-direction: column; gap: 10px; }
+  .tl-logo { margin-left: 0; flex-basis: 60px; width: 60px; height: 60px; }
+}
+
+/* ---------- Conocimiento ---------- */
+.work-box .work-img img { width: 100%; height: 220px; object-fit: cover; }
+.work-content .w-more .w-ctegory { color: var(--azul); font-weight: 600; }
+.work-content .w-more .w-date { color: var(--tenue); }
+
+/* ---------- Ajustes tras revisión visual ---------- */
+.navbar-b .nav-link { white-space: nowrap; }
+@media (min-width: 768px) and (max-width: 1399px) {
+  .navbar-b .navbar-nav .nav-link { padding-left: .55rem; padding-right: .55rem; font-size: .82rem; }
+  .navbar-b .navbar-brand { font-size: 1.25rem; }
+}
+.card-blog .card-img img, .work-box .work-img img { object-fit: contain; background: #fff; }
+.tl-logo img { object-fit: contain; padding: 3px; }
+.tl-logo { background: #fff; }
+
+/* ===== Identidad DataSquad ===== */
+:root {
+  --ds-azul: #00C2FF; --ds-morado: #C13CFF; --ds-verde: #19E36B; --ds-amarillo: #F2E814; --ds-negro: #05060B;
+  --ds-grad: linear-gradient(90deg, #00C2FF 0%, #C13CFF 38%, #19E36B 72%, #F2E814 100%);
+}
+.hero-datos {
+  background: radial-gradient(ellipse at 22% 25%, rgba(0,194,255,.28) 0%, transparent 50%),
+              radial-gradient(ellipse at 78% 30%, rgba(193,60,255,.22) 0%, transparent 48%),
+              radial-gradient(ellipse at 60% 90%, rgba(25,227,107,.18) 0%, transparent 50%),
+              var(--ds-negro);
+}
+.hero-kicker { background: var(--ds-grad); -webkit-background-clip: text; background-clip: text; color: transparent; }
+.btn-hero-primario { background: linear-gradient(90deg, #00A6E0, #A13CF0); border-color: transparent; }
+.btn-hero-primario:hover { background: linear-gradient(90deg, #00B7F2, #B04DFF); }
+.line-mf { width: 72px; height: 5px; border-radius: 3px; background: var(--ds-grad); }
+.overlay-mf {
+  background: radial-gradient(ellipse at 15% 20%, rgba(0,194,255,.30), transparent 55%),
+              radial-gradient(ellipse at 85% 80%, rgba(193,60,255,.28), transparent 55%), var(--ds-negro);
+}
+.counter-box .ico-circle { border-color: rgba(255,255,255,.25); }
+.counter-num .counter { background: var(--ds-grad); -webkit-background-clip: text; background-clip: text; color: transparent; font-weight: 700; }
+.section-counter.paralax-mf { padding: 5rem 0; }
+.tl-body { border-left: 3px solid transparent; border-image: linear-gradient(#00C2FF, #C13CFF) 1; }
+.tl-formacion .tl-body { border-image: linear-gradient(#19E36B, #F2E814) 1; }
+.skill-grupo .badge:hover { border-color: var(--ds-morado); }
+
+/* Sección DataSquad */
+.datasquad { background: var(--ds-negro); color: #d6dcef; padding: 5rem 0; position: relative; overflow: hidden; }
+.datasquad::before {
+  content: ""; position: absolute; inset: 0;
+  background: radial-gradient(ellipse at 10% 30%, rgba(0,194,255,.16), transparent 45%),
+              radial-gradient(ellipse at 90% 70%, rgba(25,227,107,.12), transparent 45%);
+}
+.datasquad .container { position: relative; }
+.ds-logo { max-width: 520px; width: 100%; display: block; margin: 0 auto 28px; }
+.ds-texto { max-width: 720px; margin: 0 auto; text-align: center; font-size: 1.12rem; line-height: 1.7; }
+.ds-temas { display: flex; flex-wrap: wrap; justify-content: center; gap: 10px; margin: 26px 0 8px; }
+.ds-temas span {
+  padding: 8px 16px; border-radius: 999px; font-size: .9rem; color: #fff;
+  border: 1.5px solid transparent;
+  background: linear-gradient(var(--ds-negro), var(--ds-negro)) padding-box, var(--ds-grad) border-box;
+}
+.ds-redes { display: flex; justify-content: center; gap: 12px; margin-top: 22px; color: #8b93a7; font-size: .95rem; }
+.ds-redes i { font-size: 1.3rem; vertical-align: middle; margin-right: 6px; color: #fff; }
+
+/* La plantilla usa "col-md-60" (no existe en Bootstrap): forzar ancho completo y evitar desbordes en celular */
+.row > .col-md-60 { flex: 0 0 100%; max-width: 100%; min-width: 0; padding-left: 15px; padding-right: 15px; }
+.post-box img { max-width: 100%; height: auto; }
+@media (max-width: 767px) {
+  html, body { overflow-x: hidden; }
+  @supports (overflow: clip) { html, body { overflow-x: clip; } }
+  .intro-single .intro-title { font-size: 1.8rem; overflow-wrap: anywhere; padding: 0 12px; }
+  .intro-single .breadcrumb { flex-wrap: wrap; padding: 0 12px; }
+  .post-box table { display: block; max-width: 100%; overflow-x: auto; }
+  .post-box pre { max-width: 100%; overflow-x: auto; }
+}

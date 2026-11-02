@@ -1,15 +1,15 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="es">
 
 <head>
     <meta charset="utf-8">
     <title>Portafolio Científico de datos</title>
     <meta content="width=device-width, initial-scale=1.0" name="viewport">
-    <meta content="" name="keywords">
-    <meta content="" name="description">
+    <meta content="análisis de datos, inteligencia artificial, visualización de datos, deep learning, bases de datos" name="keywords">
+    <meta content="Portafolio de Juan Pablo Hernández García, científico de datos en CDMX: análisis de datos, inteligencia artificial, visualización de datos, deep learning y bases de datos." name="description">
 
     <!-- Favicons -->
-    <link href="img/bd.png" rel="icon">
+    <link href="img/datasquad-icono.png" rel="icon">
     <link href="img/apple-touch-icon.png" rel="apple-touch-icon">
 
     <!-- Bootstrap CSS File -->
@@ -21,9 +21,10 @@
     <link href="lib/ionicons/css/ionicons.min.css" rel="stylesheet">
     <link href="lib/owlcarousel/assets/owl.carousel.min.css" rel="stylesheet">
     <link href="lib/lightbox/css/lightbox.min.css" rel="stylesheet">
-    <link href="css/skill-mf.css" rel="stylesheet">
     <!-- Main Stylesheet File -->
     <link href="css/style.css" rel="stylesheet">
+    <link href="css/mejoras.css" rel="stylesheet">
+    <link href="css/scroll-fx.css" rel="stylesheet">
 
     <!-- =======================================================
     Theme Name: DevFolio
@@ -51,7 +52,7 @@
                         <a class="nav-link js-scroll active" href="#home">INICIO</a>
                     </li>
                     <li class="nav-item">
-                        <a class="nav-link js-scroll" href="#about">SOBRE MI</a>
+                        <a class="nav-link js-scroll" href="#about">SOBRE MÍ</a>
                     </li>
                     <li class="nav-item">
                         <a class="nav-link js-scroll" href="#service">OBJETIVOS</a>
@@ -60,7 +61,10 @@
                         <a class="nav-link js-scroll" href="#work">PORTAFOLIO</a>
                     </li>
                     <li class="nav-item">
-                        <a class="nav-link js-scroll" href="#blog">CONOCIMIENTO</a>
+                        <a class="nav-link js-scroll" href="#experiencia">EXPERIENCIA</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="https://juanpablohdz.github.io/DS/">CONOCIMIENTO</a>
                     </li>
                     <li class="nav-item">
                         <a class="nav-link js-scroll" href="#contact">CONTACTO</a>
@@ -72,16 +76,23 @@
     <!--/ Nav End /-->
 
     <!--/ Intro Skew Star /-->
-    <div id="home" class="intro route bg-image" style="background-image: url(img/overlay-bg.jpg)">
+    <div id="home" class="intro route hero-datos">
         <div class="overlay-itro"></div>
         <div class="intro-content display-table">
             <div class="table-cell">
                 <div class="container">
                     <!--<p class="display-6 color-d">Hello, world!</p>-->
-                    <h1 class="intro-title mb-4">Soy Juan Pablo </h1>
+                    <p class="hero-kicker">CIENTÍFICO DE DATOS · CDMX</p>
+                    <h1 class="intro-title mb-4">Soy Juan Pablo</h1>
                     <p class="intro-subtitle"><span class="text-slider-items">Análisis de datos, Inteligencia
                             Artificial, visualización de datos, Deep Learning, Bases de datos</span><strong
                             class="text-slider"></strong></p>
+                    <div class="hero-ctas">
+                        <a class="btn-hero btn-hero-primario js-scroll" href="#work">Ver proyectos</a>
+                        <a class="btn-hero js-scroll" href="#experiencia">Experiencia</a>
+                        <a class="btn-hero" href="https://juanpablohdz.github.io/DS/">Conocimiento</a>
+                        <a class="btn-hero" href="https://github.com/juanpablohdz" target="_blank" rel="noopener"><i class="ion-social-github"></i> GitHub</a>
+                    </div>
                     <!-- <p class="pt-3"><a class="btn btn-primary btn js-scroll px-4" href="#about" role="button">Learn More</a></p> -->
                 </div>
             </div>
@@ -110,7 +121,7 @@
                                             </p>
                                             <p><span class="title-s">Email: </span> <span>juan.hdz9901@gmail.com</span>
                                             </p>
-                                            <p><span class="title-s">Telefono: </span> <span>(+52) 5521392712</span></p>
+                                            <p><span class="title-s">Teléfono: </span> <span>(+52) 5521392712</span></p>
                                         </div>
                                     </div>
                                 </div>
@@ -126,7 +137,7 @@
                                         </h5>
                                     </div>
                                     <p class="lead">
-                                        Curioso y apasionado de los Datos y Machine Learning . Soy una persona
+                                        Curioso y apasionado de los Datos y Machine Learning. Soy una persona
                                         autodidacta a la que le encanta aprender cosas nuevas. Disfruto trabajando con
                                         gente de diferentes áreas y compartiendo mis conocimientos sobre el mundo de los
                                         datos.</p>
@@ -145,48 +156,16 @@
                         <div class="row">
                             <div class="col-md-12">
 
-                                <h2 style="text-align:center;">SKILLS</h2>
-
-
-                                <div class="skill-mf">
-                                    <span class="badge">Python</span>
-                                    <span class="badge">SQL</span>
-                                    <span class="badge">R</span>
-                                    <span class="badge">Machine Learning</span>
-                                    <span class="badge">Deep Learning</span>
-                                    <span class="badge">Neural Networks</span>
-                                    <span class="badge">PMML</span>
-                                    <span class="badge">Power BI</span>
-                                    <span class="badge">Tableau</span>
-                                    <span class="badge">Looker Studio</span>
-                                    <span class="badge">Azure AI</span>
-                                    <span class="badge">Data Analytics</span>
-                                    <span class="badge">Business Intelligence</span>
-                                    <span class="badge">Data Visualization</span>
-                                    <span class="badge">ETL</span>
-                                    <span class="badge">Data Cleaning</span>
-                                    <span class="badge">Statistical Analysis</span>
-                                    <span class="badge">Forecasting</span>
-                                    <span class="badge">Scikit-Learn</span>
-                                    <span class="badge">TensorFlow</span>
-                                    <span class="badge">Keras</span>
-                                    <span class="badge">Pandas</span>
-                                    <span class="badge">NumPy</span>
-                                    <span class="badge">Matplotlib</span>
-                                    <span class="badge">Seaborn</span>
-                                    <span class="badge">Git</span>
-                                    <span class="badge">GitHub</span>
-                                    <span class="badge">Docker</span>
-                                    <span class="badge">HTML5</span>
-                                    <span class="badge">Storytelling</span>
-                                    <span class="badge">Automation</span>
-                                    <span class="badge">Scrum</span>
-                                    <span class="badge">n8n</span>
-                                    <span class="badge">streamlit</span>
-                                    <span class="badge">Cloudflare</span>
-                                    <span class="badge">Antropyc</span>
-                                    <span class="badge">Caude</span>
-
+                                <h2 class="skills-titulo">Skills</h2>
+                                <div class="skills-grid">
+                                    <div class="skill-grupo"><h4>Lenguajes</h4>
+                                        <span class="badge">Python</span><span class="badge">SQL</span><span class="badge">R</span></div>
+                                    <div class="skill-grupo"><h4>Machine Learning e IA</h4>
+                                        <span class="badge">Machine Learning</span><span class="badge">Deep Learning</span><span class="badge">Neural Networks</span><span class="badge">Scikit-Learn</span><span class="badge">TensorFlow</span><span class="badge">Keras</span><span class="badge">Forecasting</span><span class="badge">PMML</span><span class="badge">Azure AI</span><span class="badge">Anthropic</span><span class="badge">Claude</span></div>
+                                    <div class="skill-grupo"><h4>Análisis y visualización</h4>
+                                        <span class="badge">Data Analytics</span><span class="badge">Statistical Analysis</span><span class="badge">Data Cleaning</span><span class="badge">Pandas</span><span class="badge">NumPy</span><span class="badge">Matplotlib</span><span class="badge">Seaborn</span><span class="badge">Data Visualization</span><span class="badge">Power BI</span><span class="badge">Tableau</span><span class="badge">Looker Studio</span><span class="badge">Business Intelligence</span><span class="badge">Storytelling</span></div>
+                                    <div class="skill-grupo"><h4>Herramientas y procesos</h4>
+                                        <span class="badge">ETL</span><span class="badge">Git</span><span class="badge">GitHub</span><span class="badge">Docker</span><span class="badge">Streamlit</span><span class="badge">n8n</span><span class="badge">Cloudflare</span><span class="badge">Automation</span><span class="badge">Scrum</span></div>
                                 </div>
 
 
@@ -213,8 +192,7 @@
                             Objetivos
                         </h3>
                         <p class="subtitle-a">
-                            profesionalizacion
-
+                            Profesionalización
                         </p>
                         <div class="line-mf"></div>
                     </div>
@@ -243,7 +221,7 @@
                             <span class="ico-circle"><i class="ion-code-working"></i></span>
                         </div>
                         <div class="service-content">
-                            <h2 class="s-title">inteligencia artificial</h2>
+                            <h2 class="s-title">Inteligencia artificial</h2>
                             <p class="s-description text-center">
                                 Mi objetivo es desarrollar sistemas inteligentes que puedan aprender y adaptarse a
                                 partir de datos, mejorar la toma de decisiones y proporcionar soluciones innovadoras a
@@ -289,7 +267,7 @@
                             <span class="ico-circle"><i class="ion-paintbrush"></i></span>
                         </div>
                         <div class="service-content">
-                            <h2 class="s-title">visualización de datos</h2>
+                            <h2 class="s-title">Visualización de datos</h2>
                             <p class="s-description text-center">
                                 Mi experiencia me ha proporcionado un entendimiento sólido sobre las gráficas adecuadas
                                 para representar datos de manera efectiva, así como habilidades en el arte del
@@ -362,7 +340,7 @@
                         </div>
                         <div class="counter-num">
                             <p class="counter">8</p>
-                            <span class="counter-text">Diplomados|certificados</span>
+                            <span class="counter-text">DIPLOMADOS Y CERTIFICADOS</span>
                         </div>
                     </div>
                 </div>
@@ -380,10 +358,9 @@
                             PROYECTOS
                         </h3>
                         <p class="subtitle-a">
-                            Proyectos que e realizado tanto como Interes, profesional y Academicamente.
-
+                            Proyectos que he realizado a nivel profesional, académico y por interés propio.
                         </p>
-                        <p>algunos de los proyectos no seran mostrados por privacidad de la empresa</p>
+                        <p class="nota-privacidad">Algunos de los proyectos no se muestran por privacidad de la empresa.</p>
                         <div class="line-mf"></div>
                     </div>
                 </div>
@@ -398,12 +375,12 @@
                         <div class="card-body">
                             <div class="card-category-box">
                                 <div class="card-category">
-                                    <h6 class="category">Regresion Lineal</h6>
+                                    <h6 class="category">Regresión lineal</h6>
                                 </div>
                             </div>
                             <h3 class="card-title"><a href="proyecto-viviendas.html">Proyecto de viviendas</a></h3>
                             <p class="card-description">
-                                El proyecto en Jupyter Python con librerías como Keras, Tensor Flow, Pandas, Matplotlib
+                                El proyecto en Jupyter Python con librerías como Keras, TensorFlow, Pandas y Matplotlib.
                                 Modelo entrenado para determinar costos de viviendas.
                             </p>
                         </div>
@@ -421,11 +398,11 @@
                                     <h6 class="category">Ejercicios</h6>
                                 </div>
                             </div>
-                            <h3 class="card-title"><a href="proyecto-r.html">algoritmos para el analisis de datos</a>
+                            <h3 class="card-title"><a href="proyecto-r.html">Algoritmos para el análisis de datos</a>
                             </h3>
                             <p class="card-description">
-                                En estos ejercicios en R se aplican diferentes métodos para el análisis de los datos
-                                esta Boostrapping, análisis cluster, análisis temporal(predicción), diagrama de decisión
+                                En estos ejercicios en R se aplican diferentes métodos para el análisis de los datos:
+                                bootstrapping, análisis clúster, análisis temporal (predicción), diagrama de decisión
                                 y regresión logística.
                             </p>
                         </div>
@@ -441,10 +418,10 @@
                         <div class="card-body">
                             <div class="card-category-box">
                                 <div class="card-category">
-                                    <h6 class="category">Analisis de sentimientos</h6>
+                                    <h6 class="category">Análisis de sentimientos</h6>
                                 </div>
                             </div>
-                            <h3 class="card-title"><a href="proyecto-sentimientos.html">Analisis de Polaridad</a></h3>
+                            <h3 class="card-title"><a href="proyecto-sentimientos.html">Análisis de polaridad</a></h3>
                             <p class="card-description">
                                 Proceso sobre el entendimiento del análisis del ser humano con ideas negativas aplicando
                                 procesamiento de lenguaje natural (PNL) TextBlob, obtenemos una métrica de polaridad y
@@ -486,7 +463,7 @@
                                     <h6 class="category">KPI</h6>
                                 </div>
                             </div>
-                            <h3 class="card-title"><a href="proyecto-RETAIL.html">FILL-RATE </a></h3>
+                            <h3 class="card-title"><a href="proyecto-RETAIL.html">Fill Rate</a></h3>
                             <p class="card-description">
                                 Proyecto de análisis de datos para retail orientado a la medición del Fill Rate y
                                 desempeño logístico. Se implementó un dashboard interactivo con métricas de pedidos y
@@ -505,10 +482,10 @@
                         <div class="card-body">
                             <div class="card-category-box">
                                 <div class="card-category">
-                                    <h6 class="category">VISION ARTIFICIAL</h6>
+                                    <h6 class="category">Visión artificial</h6>
                                 </div>
                             </div>
-                            <h3 class="card-title"><a href="proyecto-TESIS.html">TESIS CANCER DE MAMA </a></h3>
+                            <h3 class="card-title"><a href="proyecto-TESIS.html">Tesis: cáncer de mama</a></h3>
                             <p class="card-description">
                                 Se trabajó con mamografías verificadas patológicamente para la detección de cáncer de
                                 mama, utilizando redes neuronales convolucionales preentrenadas y aplicando técnicas de
@@ -530,8 +507,7 @@
                                     <h6 class="category">KPIs</h6>
                                 </div>
                             </div>
-                            <h3 class="card-title"><a href="proyecto-Tracking-Inventarios.html">Tracking inventarios
-                                </a></h3>
+                            <h3 class="card-title"><a href="proyecto-Tracking-Inventarios.html">Tracking de inventarios</a></h3>
                             <p class="card-description">
                                 Monitoreo de inventarios y
                                 abastecimiento en la cadena de suministro farmacéutica, integrando indicadores de
@@ -544,23 +520,20 @@
                 <div class="col-md-4">
                     <div class="card card-blog">
                         <div class="card-img">
-                            <a href="proyecto-Tracking-Inventarios.html"><img src="img/carcinoma.jpeg" alt=""
+                            <a href="proyecto-carcinoma.html"><img src="img/carcinoma.jpeg" alt="Detección de cáncer de ovario"
                                     class="img-fluid"></a>
                         </div>
                         <div class="card-body">
                             <div class="card-category-box">
                                 <div class="card-category">
-                                    <h6 class="category">Vision artificial</h6>
+                                    <h6 class="category">Visión artificial</h6>
                                 </div>
                             </div>
-                            <h3 class="card-title"><a href="proyecto-Tracking-Inventarios.html">Deteccion de cancer de
-                                    ovario (carcinomas)
-                                </a></h3>
+                            <h3 class="card-title"><a href="proyecto-carcinoma.html">Detección de cáncer de ovario (carcinomas)</a></h3>
                             <p class="card-description">
-                                Monitoreo de inventarios y
-                                abastecimiento en la cadena de suministro farmacéutica, integrando indicadores de
-                                ventas, existencias, días de inventario (DDI), inventario en tránsito y cobertura por
-                                farmacias, CEDIS y laboratorios para apoyar la toma de decisiones estratégicas.
+                                Red neuronal que clasifica los 5 subtipos de carcinoma de cáncer de ovario a partir de
+                                imágenes de tejido (competencia UBC-OCEAN de Kaggle), evaluada con una matriz de
+                                confusión multiclase.
                             </p>
                         </div>
                     </div>
@@ -568,7 +541,7 @@
                 <div class="col-md-4">
                     <div class="card card-blog">
                         <div class="card-img">
-                            <a href="proyecto-Tracking-Inventarios.html"><img src="img/alcaldia_covid.jpeg" alt=""
+                            <a href="proyecto-covid.html"><img src="img/alcaldia_covid.jpeg" alt="Casos de COVID por alcaldía"
                                     class="img-fluid"></a>
                         </div>
                         <div class="card-body">
@@ -577,14 +550,10 @@
                                     <h6 class="category">KPIs</h6>
                                 </div>
                             </div>
-                            <h3 class="card-title"><a href="proyecto-Tracking-Inventarios.html">visualizavcion de casos
-                                    de covid por alcaldia
-                                </a></h3>
+                            <h3 class="card-title"><a href="proyecto-covid.html">Visualización de casos de COVID por alcaldía</a></h3>
                             <p class="card-description">
-                                Monitoreo de inventarios y
-                                abastecimiento en la cadena de suministro farmacéutica, integrando indicadores de
-                                ventas, existencias, días de inventario (DDI), inventario en tránsito y cobertura por
-                                farmacias, CEDIS y laboratorios para apoyar la toma de decisiones estratégicas.
+                                Práctica sencilla en Looker Studio con datos abiertos que compara los casos de
+                                COVID-19 por alcaldía en la Ciudad de México.
                             </p>
                         </div>
                     </div>
@@ -596,308 +565,78 @@
     </section>
     <!--/ Section Blog End /-->
 
-    <!--/ Section Testimonials Star /-->
-    <div class="testimonials paralax-mf bg-image" style="background-image: url(img/overlay-bg.jpg)">
-        <div class="overlay-mf"></div>
+    <!--/ Section Experiencia /-->
+    <section id="experiencia" class="experiencia route">
         <div class="container">
-            <div class="row">
-                <div class="col-md-12">
-                    <div id="testimonial-mf" class="owl-carousel owl-theme">
-                        <div class="testimonial-box">
-                            <div class="author-test">
-                                <img src="img/UNRC.jpeg" alt="" class="rounded-circle b-shadow-a">
-                                <span class="author">Universidad Nacional Rosario Castellanos</span>
-                            </div>
-                            <div class="content-test">
-                                <p class="description lead">
-                                    Egresado como Científico de datos, donde realice proyectos como manipulación,
-                                    análisis, visualización de los datos.
-                                </p>
-                                <span class="comit"><i class="fa fa-quote-right"></i></span>
-                            </div>
-                        </div>
-                        <div class="testimonial-box">
-                            <div class="author-test">
-                                <img src="img/Adip.jpg" alt="" class="rounded-circle b-shadow-a">
-                                <span class="author">Agencia Digital de Innovación Publica</span>
-                            </div>
-                            <div class="content-test">
-                                <p class="description lead">
-                                    Me desempeñe como analista de datos dentro del equipo de desarrollo.
-                                </p>
-                                <span class="comit"><i class="fa fa-quote-right"></i></span>
-                            </div>
-                        </div>
-                        <div class="testimonial-box">
-                            <div class="author-test">
-                                <img src="img/FARMATODO.png" alt="" class="rounded-circle b-shadow-a">
-                                <span class="author">FARMATODO</span>
-                            </div>
-                            <div class="content-test">
-                                <p class="description lead">
-                                    Trabajé como científico de datos en el área de Planeación de la Demanda, donde
-                                    desarrollé nuevos pronósticos de demanda y optimicé reportes de Inteligencia de
-                                    Negocio. Además, realicé análisis de datos enfocados en el comportamiento y gestión
-                                    de pedidos.
-                                </p>
-                                <span class="comit"><i class="fa fa-quote-right"></i></span>
-                            </div>
-                        </div>
-                        <div class="testimonial-box">
-                            <div class="author-test">
-                                <img src="img/global.png" alt="" class="rounded-circle b-shadow-a">
-                                <span class="author">Global HITSS(Científico de Datos – Proyecto BBVA (Riesgos
-                                    Retail))</span>
-                            </div>
-                            <div class="content-test">
-                                <p class="description lead">
-                                    Colaboré como científico de datos para el cliente BBVA México dentro del área de
-                                    Parametría.
-
-                                    Brindé soporte al motor de decisiones, implementando modelos predictivos en formato
-                                    PMML, desarrollando soluciones automatizadas para evaluación de riesgo y
-                                    participando activamente en la explicación e interpretación de algoritmos de
-                                    inteligencia artificial para equipos técnicos y de negocio, asegurando su correcta
-                                    comprensión y uso operativo.
-                                </p>
-                                <span class="comit"><i class="fa fa-quote-right"></i></span>
-                            </div>
-                        </div>
-                    </div>
-                </div>
+            <div class="title-box text-center">
+                <h3 class="title-a">Experiencia</h3>
+                <p class="subtitle-a">Trayectoria profesional y formación</p>
+                <div class="line-mf"></div>
             </div>
-        </div>
-    </div>
-    <!--/ Section Portfolio Star /-->
-
-    <section id="blog" class="portfolio-mf sect-pt4 route">
-        <div class="container">
-
-            <div class="row">
-                <div class="col-sm-12">
-                    <div class="title-box text-center">
-                        <h3 class="title-a">
-                            CONOCIMIENTO
-                        </h3>
-                        <p class="subtitle-a">
-                            Este apartado representa una recopilación de los conocimientos y habilidades que he
-                            desarrollado a lo largo de mi trayectoria como científico de datos, y muestra mi compromiso
-                            continuo con la excelencia en este campo en constante evolución.
-                        </p>
-                        <div class="line-mf"></div>
+            <div class="timeline">
+                <div class="tl-item">
+                    <div class="tl-logo"><img src="img/global.png" alt="Global HITSS"></div>
+                    <div class="tl-body">
+                        <h4>Científico de datos</h4>
+                        <p class="tl-org">Global HITSS · Proyecto BBVA México (Riesgos Retail)</p>
+                        <ul>
+                            <li>Colaboré como científico de datos para el cliente BBVA México dentro del área de Parametría.</li>
+                            <li>Brindé soporte al motor de decisiones, implementando modelos predictivos en formato PMML.</li>
+                            <li>Desarrollé soluciones automatizadas para evaluación de riesgo.</li>
+                            <li>Participé en la explicación e interpretación de algoritmos de inteligencia artificial para equipos técnicos y de negocio, asegurando su correcta comprensión y uso operativo.</li>
+                        </ul>
                     </div>
                 </div>
-            </div>
-            <div class="row">
-                <div class="col-md-4">
-                    <div class="work-box">
-
-                        <a href="img/work-1.jpg" data-lightbox="gallery-mf">
-
-                            <div class="work-img">
-                                <a href="conocimiento-matematicas.html"><img src="img/matematicas.png" alt=""
-                                        class="img-fluid"></a>
-                            </div>
-                            <div class="work-content">
-                                <div class="row">
-                                    <div class="col-sm-8">
-                                        <h2 class="w-title">Matemáticas </h2>
-                                        <div class="w-more">
-                                            <span class="w-ctegory"></span> / <span class="w-date"></span>
-                                        </div>
-                                    </div>
-                                    <div class="col-sm-4">
-                                        <div class="w-like">
-                                            <span class="ion-ios-plus-outline"></span>
-                                        </div>
-                                    </div>
-                                </div>
-                            </div>
-                        </a>
+                <div class="tl-item">
+                    <div class="tl-logo"><img src="img/FARMATODO.png" alt="Farmatodo"></div>
+                    <div class="tl-body">
+                        <h4>Científico de datos</h4>
+                        <p class="tl-org">Farmatodo · Planeación de la Demanda</p>
+                        <ul>
+                            <li>Desarrollé nuevos pronósticos de demanda.</li>
+                            <li>Optimicé reportes de Inteligencia de Negocio.</li>
+                            <li>Realicé análisis de datos enfocados en el comportamiento y gestión de pedidos.</li>
+                        </ul>
                     </div>
                 </div>
-                <div class="col-md-4">
-                    <div class="work-box">
-                        <a href="img/work-2.jpg" data-lightbox="gallery-mf">
-                            <div class="work-img">
-                                <a href="conocimiento-estadistica.html"><img src="img/estadistica.png" alt=""
-                                        class="img-fluid"></a>
-                            </div>
-                            <div class="work-content">
-                                <div class="row">
-                                    <div class="col-sm-8">
-                                        <h2 class="w-title">Estadística </h2>
-                                        <div class="w-more">
-                                            <span class="w-ctegory"></span> / <span class="w-date"></span>
-                                        </div>
-                                    </div>
-                                    <div class="col-sm-4">
-                                        <div class="w-like">
-                                            <span class="ion-ios-plus-outline"></span>
-                                        </div>
-                                    </div>
-                                </div>
-                            </div>
-                        </a>
+                <div class="tl-item">
+                    <div class="tl-logo"><img src="img/Adip.jpg" alt="ADIP"></div>
+                    <div class="tl-body">
+                        <h4>Analista de datos</h4>
+                        <p class="tl-org">Agencia Digital de Innovación Pública</p>
+                        <ul>
+                            <li>Me desempeñé como analista de datos dentro del equipo de desarrollo.</li>
+                        </ul>
                     </div>
                 </div>
-                <div class="col-md-4">
-                    <div class="work-box">
-                        <a href="img/work-3.jpg" data-lightbox="gallery-mf">
-                            <div class="work-img">
-                                <a href="conocimiento-IA.html"><img src="img/ia.png" alt="" class="img-fluid"></a>
-                            </div>
-                            <div class="work-content">
-                                <div class="row">
-                                    <div class="col-sm-8">
-                                        <h2 class="w-title">Inteligencia artificial</h2>
-                                        <div class="w-more">
-                                            <span class="w-ctegory"> </span> / <span class="w-date"></span>
-                                        </div>
-                                    </div>
-                                    <div class="col-sm-4">
-                                        <div class="w-like">
-                                            <span class="ion-ios-plus-outline"></span>
-                                        </div>
-                                    </div>
-                                </div>
-                            </div>
-                        </a>
+                <div class="tl-item tl-formacion">
+                    <div class="tl-logo"><img src="img/UNRC.jpeg" alt="UNRC"></div>
+                    <div class="tl-body">
+                        <h4>Científico de datos (egresado)</h4>
+                        <p class="tl-org">Universidad Nacional Rosario Castellanos</p>
+                        <ul>
+                            <li>Realicé proyectos de manipulación, análisis y visualización de los datos.</li>
+                        </ul>
                     </div>
                 </div>
-                <div class="col-md-4">
-                    <div class="work-box">
-                        <a href="img/work-4.jpg" data-lightbox="gallery-mf">
-                            <div class="work-img">
-                                <a href="conocimiento-BD.html"><img src="img/base de datos.jpg" alt=""
-                                        class="img-fluid"></a>
-                            </div>
-                            <div class="work-content">
-                                <div class="row">
-                                    <div class="col-sm-8">
-                                        <h2 class="w-title">Bases de datos</h2>
-                                        <div class="w-more">
-                                            <span class="w-ctegory"></span> / <span class="w-date"></span>
-                                        </div>
-                                    </div>
-                                    <div class="col-sm-4">
-                                        <div class="w-like">
-                                            <span class="ion-ios-plus-outline"></span>
-                                        </div>
-                                    </div>
-                                </div>
-                            </div>
-                        </a>
-                    </div>
-                </div>
-                <div class="col-md-4">
-                    <div class="work-box">
-                        <a href="img/work-5.jpg" data-lightbox="gallery-mf">
-                            <div class="work-img">
-                                <a href="conocimiento-sistemas.html"><img src="img/sistemas operativos.png" alt=""
-                                        class="img-fluid"></a>
-                            </div>
-                            <div class="work-content">
-                                <div class="row">
-                                    <div class="col-sm-8">
-                                        <h2 class="w-title">Sistemas Operativos</h2>
-                                        <div class="w-more">
-                                            <span class="w-ctegory"></span> / <span class="w-date"></span>
-                                        </div>
-                                    </div>
-                                    <div class="col-sm-4">
-                                        <div class="w-like">
-                                            <span class="ion-ios-plus-outline"></span>
-                                        </div>
-                                    </div>
-                                </div>
-                            </div>
-                        </a>
-                    </div>
-                </div>
-                <div class="col-md-4">
-                    <div class="work-box">
-                        <a href="img/work-5.jpg" data-lightbox="gallery-mf">
-                            <div class="work-img">
-                                <a href="conocimiento-Storytelling.html"><img src="img/Storytelling.png" alt=""
-                                        class="img-fluid"></a>
-                            </div>
-                            <div class="work-content">
-                                <div class="row">
-                                    <div class="col-sm-8">
-                                        <h2 class="w-title">Storytelling </h2>
-                                        <div class="w-more">
-                                            <span class="w-ctegory">exposición</span> / <span class="w-date"></span>
-                                        </div>
-                                    </div>
-                                    <div class="col-sm-4">
-                                        <div class="w-like">
-                                            <span class="ion-ios-plus-outline"></span>
-                                        </div>
-                                    </div>
-                                </div>
-                            </div>
-                        </a>
-                    </div>
-                </div>
-                <div class="col-md-4">
-                    <div class="work-box">
-                        <a href="img/work-5.jpg" data-lightbox="gallery-mf">
-                            <div class="work-img">
-                                <a href="conocimiento-Nube Azure.html"><img src="img/AZURE.png" alt=""
-                                        class="img-fluid"></a>
-                            </div>
-                            <div class="work-content">
-                                <div class="row">
-                                    <div class="col-sm-8">
-                                        <h2 class="w-title">AZURE</h2>
-                                        <div class="w-more">
-                                            <span class="w-ctegory"></span> / <span class="w-date"></span>
-                                        </div>
-                                    </div>
-                                    <div class="col-sm-4">
-                                        <div class="w-like">
-                                            <span class="ion-ios-plus-outline"></span>
-                                        </div>
-                                    </div>
-                                </div>
-                            </div>
-                        </a>
-                    </div>
-                </div>
-                <div class="col-md-4">
-                    <div class="work-box">
-                        <a href="img/work-5.jpg" data-lightbox="gallery-mf">
-                            <div class="work-img">
-                                <a href="conocimiento-ing_var.html"><img src="img/ingenieria_var.png" alt=""
-                                        class="img-fluid"></a>
-                            </div>
-                            <div class="work-content">
-                                <div class="row">
-                                    <div class="col-sm-8">
-                                        <h2 class="w-title">ingenieria de variables</h2>
-                                        <div class="w-more">
-                                            <span class="w-ctegory"></span> ratios/medias moviles <span
-                                                class="w-date"></span>
-                                        </div>
-                                    </div>
-                                    <div class="col-sm-4">
-                                        <div class="w-like">
-                                            <span class="ion-ios-plus-outline"></span>
-                                        </div>
-                                    </div>
-                                </div>
-                            </div>
-                        </a>
-                    </div>
-                </div>
-
-
-
             </div>
         </div>
     </section>
-    <!--/ Section Portfolio End /-->
+    <!--/ Section Conocimiento (enlace a la carpeta conocimientos) /-->
+    <section id="blog" class="datasquad route">
+        <div class="container text-center" style="text-align:center;">
+            <img src="img/datasquad-logo.png" alt="DataSquad · Ciencia de datos" style="width:min(80%,380px);margin:0 auto 26px;display:block;">
+            <h3 style="color:#fff;font-size:2.4rem;font-weight:700;letter-spacing:.04em;margin-bottom:14px;">CONOCIMIENTO</h3>
+            <p class="ds-texto">Este apartado representa una recopilación de los conocimientos y habilidades que he desarrollado a lo largo de mi trayectoria como científico de datos, y muestra mi compromiso continuo con la excelencia en este campo en constante evolución.</p>
+            <div class="ds-temas">
+                <span>Matemáticas</span><span>Estadística</span><span>Inteligencia artificial</span><span>Bases de datos</span><span>Sistemas Operativos</span><span>Storytelling</span><span>AZURE</span><span>Ingeniería de variables</span>
+            </div>
+            <div class="hero-ctas">
+                <a class="btn-hero btn-hero-primario" href="https://juanpablohdz.github.io/DS/">Ver mis conocimientos</a>
+            </div>
+        </div>
+    </section>
+    <!--/ Section Conocimientos End /-->
 
 
     <!--/ Section Contact-Footer Star /-->
@@ -919,7 +658,7 @@
                                     </div>
                                     <div class="more-info">
                                         <p class="lead text-center">
-                                            PODRAS CONTACTARME POR:
+                                            Podrás contactarme por:
                                         </p>
                                         <ul class="list-ico text-center">
                                             <li><span class="ion-ios-location"></span> CDMX</li>
@@ -929,21 +668,10 @@
                                     </div>
                                     <div class="socials">
                                         <ul class="list-ico text-center">
-                                            <li><a href="https://www.linkedin.com/in/juan-pablo-hernandez-garcia/"
-                                                    target="_blank"><span class="ico-circle"><i
-                                                            class="ion-social-linkedin"></i></span></a></li>
-                                            <li><a href="mailto:juan.hdz9901@gmail.com?body=Hola te contacto desde tu sitio web asunto:"
-                                                    target="_blank " "><span class=" ico-circle "><i class="
-                                                    ion-android-mail "></i></span></a></li>
-                                            <li><a href="
-                                                    https://api.whatsapp.com/send?phone=+525521392712&text=HOLA!%20te%20contacto%20desde%20tu%20sitio%20web%20este%20es%20mi%20asunto: " target="
-                                                    _blank ""><span class="ico-circle"><i
-                                                            class="ion-social-whatsapp"></i></span></a>
-                                            </li>
-                                            <li>
-                                                <a href="https://github.com/juanpablohdz "
-                                                    target="_blank " "><span class=" ico-circle "><i class="
-                                                    ion-social-github "></i></span></a></li>
+                                            <li><a href="https://www.linkedin.com/in/juan-pablo-hernandez-garcia/" target="_blank" rel="noopener" aria-label="LinkedIn"><span class="ico-circle"><i class="ion-social-linkedin"></i></span></a></li>
+                                            <li><a href="mailto:juan.hdz9901@gmail.com?subject=Contacto%20desde%20tu%20sitio%20web&body=Hola%2C%20te%20contacto%20desde%20tu%20sitio%20web." aria-label="Correo"><span class="ico-circle"><i class="ion-android-mail"></i></span></a></li>
+                                            <li><a href="https://api.whatsapp.com/send?phone=525521392712&text=HOLA!%20te%20contacto%20desde%20tu%20sitio%20web%20este%20es%20mi%20asunto%3A" target="_blank" rel="noopener" aria-label="WhatsApp"><span class="ico-circle"><i class="ion-social-whatsapp"></i></span></a></li>
+                                            <li><a href="https://github.com/juanpablohdz" target="_blank" rel="noopener" aria-label="GitHub"><span class="ico-circle"><i class="ion-social-github"></i></span></a></li>
                                         </ul>
                                     </div>
                                 </div>
@@ -954,20 +682,11 @@
             </div>
         </div>
         <footer>
-            <div class=" container ">
-                <div class=" row ">
-                    <div class=" col-sm-12 ">
-                        <div class=" copyright-box ">
-                            <p class=" copyright ">&copy; Copyright <strong>DevFolio</strong>. All Rights Reserved</p>
-                            <div class=" credits ">
-                                <!--
-                  All the links in the footer should remain intact.
-                  You can delete the links only if you purchased the pro version.
-                  Licensing information: https://bootstrapmade.com/license/
-                  Purchase the pro version with working PHP/AJAX contact form: https://bootstrapmade.com/buy/?theme=DevFolio
-                -->
-                                Designed by <a href=" https://bootstrapmade.com/ ">BootstrapMade</a>
-                            </div>
+            <div class="container">
+                <div class="row">
+                    <div class="col-sm-12">
+                        <div class="copyright-box">
+                            <p class="copyright">&copy; Juan Pablo Hernández García</p>
                         </div>
                     </div>
                 </div>
@@ -976,25 +695,26 @@
     </section>
     <!--/ Section Contact-footer End /-->
 
-    <a href=" # " class=" back-to-top "><i class=" fa fa-chevron-up "></i></a>
-    <div id=" preloader "></div>
+    <a href="#" class="back-to-top"><i class="fa fa-chevron-up"></i></a>
+    <div id="preloader"></div>
 
     <!-- JavaScript Libraries -->
-    <script src=" lib/jquery/jquery.min.js "></script>
-    <script src=" lib/jquery/jquery-migrate.min.js "></script>
-    <script src=" lib/popper/popper.min.js "></script>
-    <script src=" lib/bootstrap/js/bootstrap.min.js "></script>
-    <script src=" lib/easing/easing.min.js "></script>
-    <script src=" lib/counterup/jquery.waypoints.min.js "></script>
-    <script src=" lib/counterup/jquery.counterup.js "></script>
-    <script src=" lib/owlcarousel/owl.carousel.min.js "></script>
-    <script src=" lib/lightbox/js/lightbox.min.js "></script>
-    <script src=" lib/typed/typed.min.js "></script>
+    <script src="lib/jquery/jquery.min.js"></script>
+    <script src="lib/jquery/jquery-migrate.min.js"></script>
+    <script src="lib/popper/popper.min.js"></script>
+    <script src="lib/bootstrap/js/bootstrap.min.js"></script>
+    <script src="lib/easing/easing.min.js"></script>
+    <script src="lib/counterup/jquery.waypoints.min.js"></script>
+    <script src="lib/counterup/jquery.counterup.js"></script>
+    <script src="lib/owlcarousel/owl.carousel.min.js"></script>
+    <script src="lib/lightbox/js/lightbox.min.js"></script>
+    <script src="lib/typed/typed.min.js"></script>
     <!-- Contact Form JavaScript File -->
-    <script src=" contactform/contactform.js "></script>
+    <script src="contactform/contactform.js"></script>
 
     <!-- Template Main Javascript File -->
-    <script src=" js/main.js "></script>
+    <script src="js/main.js"></script>
+    <script src="js/scroll-fx.js"></script>
 
 </body>
 

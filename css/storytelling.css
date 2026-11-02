@@ -1,0 +1,81 @@
+/* ===== Página de Storytelling ===== */
+.st { font-size: 1rem; color: #333a45; }
+.st p { line-height: 1.7; }
+.st-lead { font-size: 1.12rem; color: #3f4552; border-left: 4px solid var(--ds-azul, #0078ff); padding-left: 16px; }
+
+.st-indice { background: #f5f7fb; border-radius: 12px; padding: 18px 22px; margin: 28px 0 10px; }
+.st-indice strong { display: block; margin-bottom: 8px; font-size: .8rem; letter-spacing: .1em; text-transform: uppercase; color: #6b7280; }
+.st-indice ol { columns: 2; column-gap: 32px; margin: 0; padding-left: 20px; }
+.st-indice li { margin-bottom: 4px; }
+.st-indice a { color: #1e6fd9; }
+
+.st-h2 { display: flex; align-items: center; gap: 12px; font-size: 1.55rem; margin: 52px 0 14px; scroll-margin-top: 90px; }
+.st-h2 span {
+  flex: 0 0 38px; height: 38px; border-radius: 50%; display: inline-flex; align-items: center; justify-content: center;
+  color: #fff; font-size: 1rem; font-weight: 700; background: var(--ds-grad, linear-gradient(135deg,#00C2FF,#C13CFF 55%,#19E36B));
+}
+.st-h4 { font-size: 1.15rem; margin: 30px 0 10px; }
+
+.st-fig { margin: 18px 0 22px; background: #fff; border: 1px solid #e6e9ef; border-radius: 12px; padding: 12px; }
+.st-fig img { display: block; margin: 0 auto; }
+
+.st-grid3, .st-grid2 { display: grid; gap: 16px; margin: 18px 0; }
+.st-grid3 { grid-template-columns: repeat(3, minmax(0,1fr)); }
+.st-grid2 { grid-template-columns: repeat(2, minmax(0,1fr)); }
+.st-card { background: #f7f8fb; border-radius: 12px; padding: 18px 20px; }
+.st-card > i { font-size: 1.8rem; color: #1e6fd9; }
+.st-card h4 { font-size: 1.05rem; margin: 6px 0 8px; }
+.st-card p, .st-card li { font-size: .95rem; margin-bottom: 4px; }
+.st-card ul { padding-left: 18px; margin: 0; }
+.st-ok { border-top: 4px solid #1e9e5a; }
+.st-ok h4 { color: #1e9e5a; }
+.st-no { border-top: 4px solid #d64545; }
+.st-no h4 { color: #c03a3a; }
+.st-mini .st-card { padding: 14px 16px; }
+
+.st-callout { background: #fff7ed; border-left: 4px solid #e8772e; border-radius: 8px; padding: 14px 18px; margin: 18px 0; }
+.st-callout strong { color: #1f2430; }
+.st-callout-azul { background: #eef5ff; border-left-color: #1e6fd9; }
+
+.st-tabla { width: 100%; border-collapse: collapse; margin: 14px 0 20px; font-size: .93rem; }
+.st-tabla th { background: #1f2430; color: #fff; text-align: left; padding: 10px 12px; font-weight: 600; }
+.st-tabla td { padding: 10px 12px; border-bottom: 1px solid #e6e9ef; vertical-align: top; }
+.st-tabla tbody tr:nth-child(even) { background: #f7f8fb; }
+
+.st-flujo { display: flex; gap: 8px; margin: 18px 0; flex-wrap: wrap; }
+.st-flujo div {
+  flex: 1 1 150px; position: relative; padding: 16px 14px; border-radius: 10px; color: #fff; text-align: center;
+  background: #1e6fd9;
+}
+.st-flujo div:nth-child(2) { background: #6a4bd8; }
+.st-flujo div:nth-child(3) { background: #9b3fd9; }
+.st-flujo div:nth-child(4) { background: #13a86a; }
+.st-flujo div:nth-child(5) { background: #0f8a57; }
+.st-flujo b { display: block; font-size: 1.02rem; }
+.st-flujo small { display: block; opacity: .9; margin-top: 4px; }
+
+.st-num { padding-left: 22px; }
+.st-num li { margin-bottom: 8px; }
+.st-num li::marker { color: #e8772e; font-weight: 700; }
+
+.st-pasos { display: grid; grid-template-columns: repeat(3, minmax(0,1fr)); gap: 12px; margin: 16px 0; }
+.st-pasos div { background: #f7f8fb; border-radius: 10px; padding: 14px 16px; font-size: .95rem; }
+.st-pasos span {
+  display: inline-flex; width: 26px; height: 26px; border-radius: 50%; align-items: center; justify-content: center;
+  background: #1f2430; color: #fff; font-size: .8rem; font-weight: 700; margin-right: 6px;
+}
+.st-pasos b { display: block; margin: 8px 0 4px; }
+
+.st-check { list-style: none; padding: 0; columns: 2; column-gap: 28px; }
+.st-check li { padding-left: 28px; position: relative; margin-bottom: 10px; break-inside: avoid; }
+.st-check li::before {
+  content: "✓"; position: absolute; left: 0; top: 0; width: 20px; height: 20px; border-radius: 4px;
+  background: #19E36B; color: #05060B; font-size: .8rem; font-weight: 700; display: flex; align-items: center; justify-content: center;
+}
+.st-nota { color: #6b7280; font-size: .85rem; margin-top: 30px; }
+
+@media (max-width: 767px) {
+  .st-grid3, .st-grid2, .st-pasos { grid-template-columns: 1fr; }
+  .st-indice ol, .st-check { columns: 1; }
+  .st-h2 { font-size: 1.3rem; }
+}
